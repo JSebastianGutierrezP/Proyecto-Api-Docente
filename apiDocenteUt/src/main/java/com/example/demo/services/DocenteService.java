@@ -64,4 +64,8 @@ public class DocenteService {
                 .anyMatch(docente -> docente.getTipoDocumento().equals(tipoDocumento) &&
                         docente.getNumeroIdentificacion().equals(numeroIdentificacion));
     }
+    
+	private boolean eliminarDocente(int Id) {
+		return docenteRepository.existsById(null);
+	}
 }
